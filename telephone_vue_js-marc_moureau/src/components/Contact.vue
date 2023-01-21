@@ -17,7 +17,7 @@ export default {
   methods: {
     Call(contact){
       this.$store.commit('addCalls',{
-        date: new Date(),
+        date: new Date().toLocaleDateString('fr-fr'),
         number: contact.num
       })
     }

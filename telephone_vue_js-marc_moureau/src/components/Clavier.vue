@@ -34,7 +34,7 @@ export default {
         Call(){
             if(this.$store.state.CallNumber.length > 0){
                 this.$store.commit('addCalls',{
-                    date: Date(),
+                    date: new Date().toLocaleString('fr-fr'),
                     number: this.$store.state.CallNumber
                 })
             this.$store.state.CallNumber = ""
