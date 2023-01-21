@@ -1,5 +1,5 @@
 <template>
-  <div class="about">
+  <div>
     <h1>Clavier de Composition</h1>
     <Clavier/>
     <ContactAdd/>

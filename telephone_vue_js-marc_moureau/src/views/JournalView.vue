@@ -1,7 +1,9 @@
 <template>
     <div>
         <h1>Journal d'appel</h1>
-        <Journal/>
+        <div v-for="call in $store.state.calls" :key="call.number">
+            <Journal :call="call" :contact="contact"/>
+        </div>
         <ContactAdd/>
     </div>
 </template>

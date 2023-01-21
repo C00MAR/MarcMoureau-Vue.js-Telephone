@@ -92,7 +92,8 @@ span{
 }
 
 p{
-  font-family: 'Helvetica 35 Thin', sans-serif;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 17px;
 }
 
 </style>
