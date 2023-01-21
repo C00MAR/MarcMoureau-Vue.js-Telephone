@@ -36,8 +36,7 @@ export default {
 </script>
 <style scoped>
 .call{
-    width: 110%;
-    margin-left: -5%;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -60,4 +59,7 @@ svg:hover{
     transition: 0.4s all ease-in-out;
 }
 
+h2{
+    font-size: 20px;
+}
 </style>

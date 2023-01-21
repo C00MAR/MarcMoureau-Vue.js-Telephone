@@ -1,6 +1,6 @@
 <template>
-    <div>
-        <h1>Journal d'appel</h1>
+    <h1>Journal d'appel</h1>
+    <div class="journal">
         <div v-for="call in $store.state.calls" :key="call.number">
             <Journal :call="call" :contact="contact"/>
         </div>
@@ -24,4 +24,18 @@ export default {
 </script>
 
 <style>
+.journal{
+    overflow-y: scroll;
+    height: 65vh;
+}
+
+.journal::-webkit-scrollbar{
+	width: 6px;
+	background-color: transparent;
+}
+
+.journal::-webkit-scrollbar-thumb{
+    border-radius: 15px;
+	background-color: #5C8F86;
+}
 </style>

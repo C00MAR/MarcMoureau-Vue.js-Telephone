@@ -1,4 +1,4 @@
-import { createStore } from 'vuex'
+import { createStore } from 'vuex';
 
 export default createStore({
     state: {
@@ -36,9 +36,16 @@ export default createStore({
     },
     addCalls(state, call){
       state.calls.unshift(call)
+    },
+    addJournalEntry(state, call) {
+      state.calls.unshift(call)
     }
+
   },
   actions: {
+    addJournalEntry({ commit }, call) {
+      commit('addJournalEntry', call)
+    }
   },
   modules: {
   }

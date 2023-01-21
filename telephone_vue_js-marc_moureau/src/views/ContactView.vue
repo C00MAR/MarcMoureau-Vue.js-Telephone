@@ -3,7 +3,7 @@
     <h1>Contact</h1>
     <h2>Liste des Contacts</h2>
     <div class="list">
-      <div v-for="contact in contacts" :key="contact.prenom">
+      <div v-for="contact in contacts" :key="contact.num">
         <ContactList :contact="contact"/>
       </div>
     </div>
@@ -12,9 +12,10 @@
 </template>
 
 <script>
-
 import ContactList from '@/components/Contact.vue';
 import ContactAdd from '@/components/ContactAdd.vue';
+
+import { mapState } from 'vuex'
 
 export default {
   name: 'ContactInfo',
@@ -23,9 +24,7 @@ export default {
     ContactAdd
   },
   computed: {
-    contacts() {
-      return this.$store.state.contacts
-    }
+    ...mapState(['contacts']),
   }
 }
 </script>
