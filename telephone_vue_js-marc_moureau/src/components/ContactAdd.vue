@@ -7,9 +7,10 @@
             <button v-on:click="removeClassToForm" class="buttonStyle">+</button>
             <form @submit.prevent="ajoutContact()">
                 <h2 class="titleform">Ajouter un Contact</h2>
-                <input type="text" placeholder="Nom du contact" v-model="formContact.prenom" />
-                <input type="text" placeholder="Numéro du contact" v-model="formContact.num" />
-                <input type="submit">
+                <input class="inputform" type="text" placeholder="Nom du contact" v-model="formContact.prenom" />
+                <input class="inputform" type="text" placeholder="Numéro du contact" v-model="formContact.num" />
+                <br>
+                <input class="submitform" type="submit">
             </form>
         </div>
     </div>
@@ -46,6 +47,40 @@ export default {
 </script>
 
 <style scoped>
+
+.formOpen .submitform{
+    background-color: #5C8F86;
+    border: 3px solid #2A2A2A;
+    padding: 10px 20px;
+    width: 200px;
+    height: 40px;
+    border-radius: 15px;
+    font-size: 15px;
+    margin-top: 35px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.15s all ease-in-out;
+    font-family: 'Helvetica 25 UltraLight', sans-serif;
+}
+
+.formOpen .submitform:hover{
+    transition: 0.4s all ease-in-out;
+    background-color: #2A2A2A;
+    color: #7D7D7D;
+    letter-spacing: 3px;
+}
+
+.formOpen .inputform{
+    background-color: #2A2A2A;
+    border: 0px;
+    padding: 10px 20px;
+    width: 200px;
+    height: 40px;
+    border-radius: 15px;
+    font-size: 15px;
+    margin-bottom: 15px;
+    font-family: 'Helvetica 25 UltraLight', sans-serif;
+}
 .titleform{
     color: black;
 }
