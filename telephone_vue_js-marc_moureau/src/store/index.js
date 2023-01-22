@@ -8,22 +8,22 @@ export default createStore({
           num: '0680717127'
         },
         {
-          prenom: 'uhhu',
-          num: '0000'
+          prenom: 'Marc',
+          num: '0645367865'
         }
       ],
       calls: [
         {
           number: '0680717127',
-          date: '00'
+          date: '21/01/2023'
         },
         {
-          number: '0000',
-          date: '151515'
+          number: '0645367865',
+          date: '21/01/2023'
         },
         {
-          number: '00',
-          date: '11'
+          number: '0674382759',
+          date: '23/01/2023'
         }
       ],
       CallNumber: '',
